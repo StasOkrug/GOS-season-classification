@@ -10,3 +10,9 @@
 **Данные** доступны по [ссылке](https://drive.google.com/file/d/1NNME1rsp_nGL5doM9wYaWVBM3CDR5EWd/view?usp=sharing)
 
 **Модель** можно скачать [тут](https://drive.google.com/file/d/1cXtkpPyJSYF3LIG9Ok6D7jJp-iDjUdz2/view?usp=sharing)
+
+**Решение**: 
+- Скрапером собрал картинки из гугла по запросам, например, "summer landscape view". На каждый класс приходится 200-280 изображений.
+- Берем предобученный на imagenet'e resnet-18, замораживаем все слои, кроме последних 5 — свертка, батчнорм, пулинг, два fc слоя.
+- Дообучаем на нашем датасете.
+
